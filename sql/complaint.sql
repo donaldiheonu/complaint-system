@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `complaint` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `full_name` VARCHAR(255) NOT NULL,
+    `department` VARCHAR(255) NOT NULL,
+    `faculty` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `phone_number` VARCHAR(255) NOT NULL,
+    `text` VARCHAR(4096) NOT NULL,
+    `date_created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id)
+)
